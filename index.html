@@ -1,52 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu site.</title>
-</head>
-<body>
-    <h1>Eu gosto do greeninja.</h1>
-    <h2>Também sou fã de pokémon em geral. </h2>
-        <h3>Estou usando pokémon para aprender a programar.</h3>
-        <p>Olá. Meu nome é Miguel e eu estou aprendendo a programar sites em HTML, CSS e Javascript. E para usar de rascunhos utilizo pokémons como imagens e referências de temas. Nesse código estou juntando várias tags que estou aprendendo em arquivos diferentes para um site só, e assim aprender.</p>
-   <b>Sim um fã bem louco.</b>
-   <br>
-   <strong>Bem doido mesmo, mas é legal.</strong>
+    <style>
+      .bord {
+        width: 40%;
+        height: 33px;
+        border-radius: 5%;
+        background-color: red;
+      }
 
-<h2>Meus pokémons favoritos.</h2>
-<ol>
-    <li>Greeninja;</li>
-    <li>Pikachu;</li>
-    <li>Dragonite.</li>
-   </ol>
-   <table>
-    <tr>
-        <th>Pokémon.</th>
-        <th>Tipo.</th>
-        <th>Região.</th>
-    </tr>
+      .square {
+        width: 36%;
+        height: 65px;
+        background-color: rgba(2, 143, 224, 0.973);
+      }
+    </style>
+  </head>
+  <body style="background-color: aqua">
+    <header>
+      <h1>Eu gosto do greeninja.</h1>
+      <h2>Também sou fã de pokémon em geral.</h2>
+      <h3>Estou usando pokémon para aprender a programar.</h3>
+      <div class="square">
+        <nav>
+          <ol>
+            <li><a href="#Um pouco sobre mim">Um pouco sobre mim.</a></li>
+            <li>
+              <a href="#Meus Pokémons preferidos">Meus pokémons preferidos</a>
+            </li>
+            <li><a href="#Busque pela pokedex">Busque pela pokedéx!</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article id="Um pouco sobre mim">
+        <header class="bord"><h2>Um pouco sobre mim.</h2></header>
+        <p>
+          Olá. Meu nome é Miguel e eu estou aprendendo a programar sites em
+          HTML, CSS e Javascript. E para usar de rascunhos utilizo pokémons como
+          imagens e referências de temas. Nesse código estou juntando várias
+          tags que estou aprendendo em arquivos diferentes para um site só, e
+          assim aprender.
+        </p>
+        <b>Sim um fã bem louco.</b>
+        <br />
+        <strong>Bem doido mesmo, mas é legal.</strong>
+      </article>
+      <article id="Meus Pokémons preferidos">
+        <header><h2>Meus pokémons favoritos.</h2></header>
+        <ol>
+          <li>Greeninja;</li>
+          <li>Pikachu;</li>
+          <li>Dragonite.</li>
+        </ol>
+        <table>
+          <tr>
+            <th>Pokémon.</th>
+            <th>Tipo.</th>
+            <th>Região.</th>
+          </tr>
 
-    <tr>
-        <td>Mew.</td>
-        <td>Psíquico.</td>
-        <td>Kanto.</td>
-    </tr>
-   </table>
-   <br>
-   <form>
-    <label>Qual seu pokémon favorito?</label>
-    <input type="text">
-    <label>Ele é de qual geração (região)?</label>
-    <input type="text"> 
-   </form>
-    <img src="./src/assets/images/gavin-hsu-greninja.jpg" 
-    alt="Ash e Greeninja." 
-    width="400" height="500">
-    <br>
-    <a target="_blank"
-    href="https://www.pokemon.com/br/pokedex" 
-    > Visite a pokédex nacional!</a>
-</b> 
-</body>
+          <tr>
+            <td>Mew.</td>
+            <td>Psíquico.</td>
+            <td>Kanto.</td>
+          </tr>
+        </table>
+        <br />
+        <form>
+          <label>Qual seu pokémon favorito?</label>
+          <input type="text" />
+          <label>Ele é de qual geração (região)?</label>
+          <input type="text" />
+        </form>
+        <img
+          src="./src/assets/images/gavin-hsu-greninja.jpg"
+          alt="Ash e Greeninja."
+          width="400"
+          height="500"
+        />
+        <br />
+      </article>
+    </main>
+    <aside id="Busque pela pokedex">
+      <b>
+        <a target="_blank" href="https://www.pokemon.com/br/pokedex">
+          Visite a pokédex nacional!</a
+        >
+      </b>
+    </aside>
+  </body>
 </html>
