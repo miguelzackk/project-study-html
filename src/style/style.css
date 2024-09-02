@@ -24,7 +24,7 @@ body {
   background-color: aqua;
 }
 
-.center{
-    display: flex;
+.center {
+  display: flex;
   justify-content: center;
 }
