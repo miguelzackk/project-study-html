@@ -16,10 +16,15 @@ h3 {
 
 .square {
   width: 21%;
-  height: 120px;
+  height: 155px;
   background-color: rgba(2, 143, 224, 0.973);
 }
 
 body {
   background-color: aqua;
+}
+
+.center{
+    display: flex;
+  justify-content: center;
 }
